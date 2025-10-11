@@ -20,7 +20,7 @@ function selesaii(){
 </script>
 <template>
 
-    <div class="bg-[url(bg1.jpg)] w-full h-screen overflow-y-hidden overflow-x-hidden mt-20 md:mt-25 pt-5 border-gray-300 border-[1px] shadow-lg  md:shadow-xl rounded-2xl ">
+    <div class="bg-[url(/bg1.jpg)] w-full h-screen overflow-y-hidden overflow-x-hidden mt-20 md:mt-25 pt-5 border-gray-300 border-[1px] shadow-lg  md:shadow-xl rounded-2xl ">
         <div class=" md:grid md:grid-cols-2 grid-cols-1 p-3 pt-5">
             <!-- isi tampilan di hp -->
             <div class=" flex flex-col justify-center items-start md:px-14 px-5 ">
