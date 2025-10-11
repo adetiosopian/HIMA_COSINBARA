@@ -99,12 +99,13 @@ function tutup(){
         </div>
       </div>
       <!-- tampilan pemanggilan navbar di hp (sandwid) -->
-      <div class="md:hidden fixed h-9 translate-x-[280px] translate-y-5 z-50 " @click="tampil">
-        <div class="w-[25px] h-[2px] bg-black/70 fixed" :class="atas"></div>
-        <div class="w-[25px] h-[2px] bg-black/70 fixed" :class="tengah1"></div>
-        <div class="w-[25px] h-[2px] bg-black/70 fixed" :class="tengah2"></div>
-        <div class="w-[25px] h-[2px] bg-black/70 fixed" :class="bawah"></div>
+      <div class="md:hidden fixed right-5 top-10 h-9 z-50 flex flex-col gap-[0.5px] cursor-pointer" @click="tampil">
+        <div class="w-[25px] h-[1px]  bg-black/70" :class="atas"></div>
+        <div class="w-[25px] h-[1px] bg-black/70" :class="tengah1"></div>
+        <div class="w-[25px] h-[1px] bg-black/70" :class="tengah2"></div>
+        <div class="w-[25px] h-[1px] bg-black/70" :class="bawah"></div>
       </div>
+
       <!-- tampilan navbar di hp -->
       <div class="md:hidden fixed bg-white w-full h-full -translate-y-5" :class="muncul" @click="tutup"></div>
       <div class="fixed md:hidden bg-gray-900 rounded-r-2xl -translate-y-[30px] p-4 h-full w-2/3 text-[15px] z-100 shadow-lg border-1 " :class="hi">
@@ -120,7 +121,7 @@ function tutup(){
         <div class="w-full h-[1px]  bg-white"></div> <br>
       </div>
       <!-- tampilan navbar di pc atau leptop -->
-      <div class="w-full h-max md:flex gap-10 p-5 pr-18 font-bold font-sans justify-end text-[18px] space-x-7 hidden ">
+      <div class="w-full h-max md:flex md:text-[15px] md:gap-5 p-5 pr-1 font-bold font-sans justify-end text-[5px] sm:hidden lg:text-[18px] lg:gap-10 space-x-7 hidden  ">
         <span class="hover:scale-125 uppercase"><router-link to="/">Home</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/profil">Profil</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/kegiatan">AGENDA</router-link></span>
