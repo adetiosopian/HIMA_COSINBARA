@@ -1,8 +1,7 @@
 
 <script setup>
 import { ref } from 'vue';
-const t = localStorage.getItem("pesan")
-console.log(t.value)
+
 
 // animasi tommbol
 var aksi=ref('bg-gray-500')
