@@ -1,6 +1,8 @@
 
 <script setup>
 import { ref } from 'vue';
+const t = localStorage.getItem("pesan")
+console.log(t.value)
 
 // animasi tommbol
 var aksi=ref('bg-gray-500')
@@ -33,7 +35,7 @@ function selesaii(){
                 <p class="text-gray-700 md:hidden block text-[12px] p-6 text-justify font-bold">HIMA COSINBARA hadir sebagai wadah resmi bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan dan solidaritas di antara anggotanya.</p>
                 <div class="flex gap-6 " >
                     <span class=" rounded-2xl text-white font-bold p-5 mt-5 md:hover:scale-110 md:hover:bg-gray-700"  @touchstart="mulai"  @touchend="selesai" :class="aksi"><router-link to="/profil">Mengenal Lebih</router-link></span>
-                    <span class=" rounded-2xl text-white font-bold p-5 mt-5  hover:scale-110 md:hover:bg-blue-700" @touchstart="mulaii"  @touchend="selesaii" :class="aksii"><router-link to="">Daftar HIMA</router-link></span>
+                    <span class=" rounded-2xl text-white font-bold p-5 mt-5  hover:scale-110 md:hover:bg-blue-700" @touchstart="mulaii"  @touchend="selesaii" :class="aksii"><router-link to="/daftar">Daftar HIMA</router-link></span>
                 </div>
             </div>
         </div>

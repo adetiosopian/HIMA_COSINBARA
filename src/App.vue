@@ -42,6 +42,7 @@ var wan= ref('text-gray-600')
 var war= ref('text-gray-600')
 var wa= ref('text-gray-600')
 var w= ref('text-gray-600')
+var warni= ref('text-gray-600')
 function ubah(){
   w.value='text-gray-900'
 }
@@ -56,6 +57,9 @@ function u(){
 }
 function h(){
   warna.value='text-gray-900'
+}
+function hu(){
+  warni.value='text-gray-900'
 }
 
 function udahan(){
@@ -72,6 +76,9 @@ function uda(){
 }
 function ud(){
   warna.value='text-gray-600'
+}
+function udi(){
+  warni.value='text-gray-600'
 }
 
 function tutup(){
@@ -117,7 +124,9 @@ function tutup(){
         <div class="w-full h-[1px] bg-white"></div> <br>
         <span class="block mb-1 w-full text-white" @touchstart="u" :class="wan" @touchend="uda" @click="tutup"><router-link to="/struktur" class="w-full">STRUKTUR</router-link></span><br>
         <div class="w-full h-[1px] bg-white"></div> <br>
-        <span class="block w-full mb-1 text-white" @touchstart="h" :class="warna" @touchend="ud" @click="tutup"><router-link to="" class="w-full">TOKO</router-link></span><br>
+        <span class="block w-full mb-1 text-white" @touchstart="h" :class="warna" @touchend="ud" @click="tutup"><router-link to="/admin" class="w-full">TOKO</router-link></span><br>
+        <div class="w-full h-[1px]  bg-white"></div> <br>
+        <span class="block w-full mb-1 text-white" @touchstart="hu" :class="warna" @touchend="udi" @click="tutup"><router-link to="/advo" class="w-full">Advo</router-link></span><br>
         <div class="w-full h-[1px]  bg-white"></div> <br>
       </div>
       <!-- tampilan navbar di pc atau leptop -->
@@ -126,7 +135,8 @@ function tutup(){
         <span class="hover:scale-125 uppercase"><router-link to="/profil">Profil</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/kegiatan">AGENDA</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/struktur">Struktur</router-link></span>
-        <span class="hover:scale-125 uppercase"><router-link to="">Toko</router-link></span>
+        <span class="hover:scale-125 uppercase"><router-link to="/admin">Toko</router-link></span>
+        <span class="hover:scale-125 uppercase"><router-link to="/advo">Advo</router-link></span>
       </div>
     </div>
   </div>
