@@ -173,7 +173,7 @@ function fokus3(){
                 <div>
                     <div class="grid grid-cols-[30px_auto] mb-2 ">
                         <img src="../assets/gmail.png" alt="" class="inline w-[25px] h-[20px] p-[2px] bg-top bg-cover rounded-[7px] mr-2">
-                        <h6 class="inline">Email <br>HimaCosinbara.gmail.com</h6>
+                        <h6 class="inline">Email <br>himacosinbara.gmail.com</h6>
                     </div>
                     <div class="grid grid-cols-[30px_auto] mb-2">
                         <img src="../assets/tlp.png" alt="" class="inline w-[25px] h-[20px] p-[2px] bg-top bg-cover rounded-[7px] mr-2">

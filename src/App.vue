@@ -124,7 +124,7 @@ function tutup(){
         <div class="w-full h-[1px] bg-white"></div> <br>
         <span class="block mb-1 w-full text-white" @touchstart="u" :class="wan" @touchend="uda" @click="tutup"><router-link to="/struktur" class="w-full">STRUKTUR</router-link></span><br>
         <div class="w-full h-[1px] bg-white"></div> <br>
-        <span class="block w-full mb-1 text-white" @touchstart="h" :class="warna" @touchend="ud" @click="tutup"><router-link to="/admin" class="w-full">TOKO</router-link></span><br>
+        <span class="block w-full mb-1 text-white" @touchstart="h" :class="warna" @touchend="ud" @click="tutup"><router-link to="/toko" class="w-full">TOKO</router-link></span><br>
         <div class="w-full h-[1px]  bg-white"></div> <br>
         <span class="block w-full mb-1 text-white" @touchstart="hu" :class="warna" @touchend="udi" @click="tutup"><router-link to="/advo" class="w-full">Advo</router-link></span><br>
         <div class="w-full h-[1px]  bg-white"></div> <br>
@@ -135,7 +135,7 @@ function tutup(){
         <span class="hover:scale-125 uppercase"><router-link to="/profil">Profil</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/kegiatan">AGENDA</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/struktur">Struktur</router-link></span>
-        <span class="hover:scale-125 uppercase"><router-link to="/admin">Toko</router-link></span>
+        <span class="hover:scale-125 uppercase"><router-link to="/toko">Toko</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/advo">Advo</router-link></span>
       </div>
     </div>
