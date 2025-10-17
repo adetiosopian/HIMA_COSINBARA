@@ -1,7 +1,5 @@
 <script setup>
-
-    import { warn } from 'vue'
-import { useCartStore } from '../store/cart'
+    import { useCartStore } from '../store/cart'
     import { useRouter } from 'vue-router'
 
     const cart = useCartStore()
@@ -36,8 +34,8 @@ import { useCartStore } from '../store/cart'
         des:'Buka semua fitur desain profesional di Canva. Jutaan template, foto, dan elemen premium siap pakai. Cocok untuk pelajar, mahasiswa, dan profesional.'
     }
     const cupcat={
-        nama:'Cupcat',
-        gambar:'https://placehold.co/100x100/FFFFFF/FFC107?text=Cupcat&font=inter',
+        nama:'Capcut',
+        gambar:'https://placehold.co/100x100/FFFFFF/FFC107?text=Capcut&font=inter',
         harga:'Rp 10.000',
         warna:'bg-yellow-400',
         des:'Buka semua fitur editor dan ciptakan vidio yang kreatif dan keren. Cocok untuk pemula karena banyak alat yang bisa langsung dipakai mudah di gunakan dan juga terdapat banyak elemen yang siap pakai'
@@ -47,6 +45,12 @@ import { useCartStore } from '../store/cart'
         cart.setProduk(data)
         router.push('/pembelian')
     }
+    function kirimWA() {
+    const nomor = "+6285773731782" // nomor WA tujuan
+    const pesan = "Halo admin, saya tertarik dan ingin lihat-lihat dulu koleksi aplikasi premium. Apakah ada katalog atau contoh apliksi premium yang bisa saya lihat? "
+    const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`
+    window.open(url, "_blank")
+    }
 </script>
 
 
@@ -54,11 +58,11 @@ import { useCartStore } from '../store/cart'
     <div class="antialiased">
 
         <!-- ===== HEADER ===== -->
-    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky mt-[110px] z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <!-- Logo -->
             <a href="#" class="text-2xl font-extrabold text-gray-800">
-                Premi<span class="text-indigo-600">Store</span>
+                Con<span class="text-indigo-600">Store</span>
             </a>
             
             <!-- Navigation -->
@@ -69,8 +73,7 @@ import { useCartStore } from '../store/cart'
             </nav>
     
             <!-- CTA Button -->
-            <a href="https://wa.me/6281234567890" target="_blank" class="bg-indigo-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 transition-transform transform hover:scale-105 flex items-center space-x-2">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <a href="https://wa.me/6285773731782" target="_blank" class="bg-indigo-600 w-auto text-white font-semibold py-2 px-5 rounded-lg hover:bg-indigo-700 transition-transform transform hover:scale-105 flex items-center space-x-2">
                 <span>Hubungi Kami</span>
             </a>
         </div>
@@ -85,9 +88,9 @@ import { useCartStore } from '../store/cart'
             <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
                 Nikmati fitur premium dari aplikasi favoritmu dengan harga terjangkau, proses cepat, dan garansi penuh.
             </p>
-            <a href="#produk" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-indigo-700 transition-transform transform hover:scale-105 inline-block">
+            <button @click="kirimWA" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-indigo-700 transition-transform transform hover:scale-105 inline-block">
                 Lihat Semua Produk
-            </a>
+            </button>
         </section>
     
         <!-- ===== DAFTAR PRODUK ===== -->

@@ -76,8 +76,34 @@ function fokus3(){
     kedepan2.value="z-0 scale-100"
     kedepan.value="z-0 scale-100"
 }
-
-
+const a = ref("scale-100")
+const b= ref("scale-100")
+const c= ref("scale-100")
+const d = ref("scale-100")
+function e(){
+    a.value="scale-110"
+    b.value="scale-100"
+    c.value="scale-100"
+    d.value="scale-100"
+}
+function f(){
+    a.value="scale-100"
+    b.value="scale-110"
+    c.value="scale-100"
+    d.value="scale-100"
+}
+function g(){
+    a.value="scale-100"
+    b.value="scale-100"
+    c.value="scale-110"
+    d.value="scale-100"
+}
+function h(){
+    a.value="scale-100"
+    b.value="scale-100"
+    c.value="scale-100"
+    d.value="scale-110"
+}
 </script>
 <template>
     <div class=" w-full h-auto ">
@@ -126,10 +152,10 @@ function fokus3(){
             <div class="md:mt-5 p-4 mt-0 ">
                 <h1 class="md:text-4xl font-semibold text-[20px] text-center font-sans mb-5">Agenda HIMA</h1>
                 <div class="grid md:grid-cols-3 grid-cols-1 gap-5  rounded-xl md:p-5 ">
-                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center"><div class=" w-full h-full"><img src="../assets/day4,1.png" alt="" class="w-full h-full object-cover rounded-xl"></div></div>
-                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center"><div class=" w-full h-full"><img src="../assets/day3.png" alt="" class="w-full h-full object-cover rounded-xl"></div></div>
-                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center"><div class=" w-full h-full"><img src="../assets/day2.jpg" alt="" class="w-full h-full object-cover rounded-xl"></div></div>
-                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] md:col-2 text-center place-content-center"><div class=" w-full h-full"><img src="../assets/day1.jpg" alt="" class="w-full h-full object-cover rounded-xl"></div></div>
+                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center" :class="a" @click="e"><div class=" w-full h-full"><img src="../assets/day4,1.png" alt="" class="w-full h-full object-cover rounded-xl hover:scale-110"></div></div>
+                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center" :class="b" @click="f"><div class=" w-full h-full"><img src="../assets/day3.png" alt="" class="w-full h-full object-cover rounded-xl hover:scale-110"></div></div>
+                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center" :class="c" @click="g"><div class=" w-full h-full"><img src="../assets/day2.jpg" alt="" class="w-full h-full object-cover rounded-xl hover:scale-110"></div></div>
+                    <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] md:col-2 text-center place-content-center" @click="h" :class="d"><div class=" w-full h-full"><img src="../assets/day1.jpg" alt="" class="w-full h-full object-cover rounded-xl hover:scale-110"></div></div>
                 </div>
             </div>
             <div class="w-full md:col-span-4 text-center font-bold z-50" @touchstart="tex3" @touchend="tex2" :class="hai1"><router-link to="/kegiatan" class="w-full hover:text-sky-700" >Lihat secara detail...</router-link></div>

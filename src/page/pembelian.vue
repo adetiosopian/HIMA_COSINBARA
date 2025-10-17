@@ -2,13 +2,16 @@
 import { useRouter } from 'vue-router'
 
 import { useCartStore } from '../store/cart'
+import { ref } from 'vue'
 
+const jml= ref('1')
+const pilihan = ref('hari')
 
 const cart = useCartStore()
 
 function kirimWA() {
     const nomor = "+6285773731782" // nomor WA tujuan
-    const pesan = "Halo, saya ingin membeli "+cart.produk.nama+" pro 1 bulan."
+    const pesan = "Halo, saya ingin membeli "+cart.produk.nama+" pro "+jml.value+" "+pilihan.value
     const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`
     window.open(url, "_blank")
 }
@@ -20,6 +23,7 @@ const router = useRouter()
 if (!art.produk) {
   router.push('/')
 }
+
 
 
 </script>
@@ -50,8 +54,26 @@ if (!art.produk) {
                 <div class="bg-white p-6 rounded-lg shadow-md mb-6">
                     <p class="text-xl font-bold">Harga Mulai Dari</p>
                     <p class="text-5xl font-extrabold text-indigo-600 mb-6">{{ cart.produk.harga }}</p>
+                    <label for="no" class="mt-6">Jumlah pembelian</label><br>
+                    <input type="number" name="no" id="" placeholder="Masukan angka" min="1" value="1" class="w-15 my-4" v-model="jml"><br>
+                    <label for="bulan" class="mt-2">perbulan/hari/tahun</label><br>
+                    <form class="my-2" >
+                        <label>
+                          <input type="radio" name="per" v-model="pilihan" value="hari" checked>
+                          Hari
+                        </label>
+                    
+                        <label>
+                          <input type="radio" name="per" v-model="pilihan" value="bulan">
+                          Bulan
+                        </label>
+                    
+                        <label>
+                          <input type="radio" name="per" v-model="pilihan" value="tahun">
+                          Tahun
+                        </label>
+                    </form>
                     <a @click="kirimWA" class="w-full text-center bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-indigo-700 transition flex items-center justify-center space-x-3">
-                        <i data-lucide="shopping-cart" class="w-6 h-6"></i>
                         <span>Beli via WhatsApp</span>
                     </a>
                 </div>

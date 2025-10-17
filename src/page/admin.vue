@@ -1,15 +1,18 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+
 const pesanList = ref([])
 const url = "https://script.google.com/macros/s/AKfycbxn-fc9UJSQBUgE5BKEOtVcBCQjN57yXm1sjwXe-I-3bQ5uNdoAO2ozF9xfdJzhBkwS/exec"
 
 async function ambilPesan() {
   const res = await fetch(url)
   pesanList.value = await res.json()
+  
+  return pesanList
 }
 
-// onMounted(ambilPesan)
+const kosong = ref("hidden")
 const regis=ref("block")
 const tampil=ref("hidden")
 const tunggu=ref("hidden")
@@ -31,11 +34,14 @@ function login(event){
     setTimeout(()=>{
             tunggu.value="hidden"
             tex.value=""
+            if (pesanList.value<= 0){
+              kosong.value="block"
+            }
         },3050);
+    
   }
-  
-
 }
+
 </script>
 
 <template>
@@ -61,6 +67,7 @@ function login(event){
     
     <div class="p-5 mt-[10px]" :class="tampil">
       <h2 class="text-3xl">Semua Curhatan</h2>
+      <h2 :class="kosong" class="text-2xl mt-3">kosong</h2>
       
     <div role="status" :class="tunggu" class=" grid justify-center text-center mt-5">
       <svg  class="w-15 h-15 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
