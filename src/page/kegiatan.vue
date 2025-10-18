@@ -20,13 +20,13 @@
          <!-- FKS  -->
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 font-semibold mb-5">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="/aksi.jpg" alt="">
                 </div>
                 <div class="p-6">
                     <span class="text-sm font-semibold text-indigo-600 uppercase">Kolaborasi</span>
                     <h2 class="mt-2 text-xl font-bold text-gray-900">
-                        Aksi Beriraman HIMA FKS
+                        Aksi Berirama HIMA FKS
                     </h2>
                     <p class="mt-2 text-gray-500 text-sm">
                         Aksi Berbagi Bersama ini bukan hanya sekadar acara sosial, tetapi juga menjadi langkah awal dalam mewujudkan HIMA FKS Bersinergi dan Kolaborasi.
@@ -48,7 +48,7 @@
             </div>
             <!-- ilcamp -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-45 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold ">
                     <img src="/ilcamp.jpg" class="bg-cover" alt="">
                 </div>
                 <div class="p-6">
@@ -75,7 +75,7 @@
 
             <!-- Card seminar1 -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 font-semibold">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day4.jpg" alt="">
                 </div>
                 <div class="p-6">
@@ -104,7 +104,7 @@
 
             <!-- Card seminar2-->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-500 font-semibold">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day4,1.png" class="object-cover w-full h-full " alt="">
                 </div>
                 <div class="p-6">
@@ -133,7 +133,7 @@
 
             <!-- Card Kegiatan desain-->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-48 bg-gray-300 flex items-center justify-center text-gray-500 font-semibold">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day3.png" alt="">
                 </div>
                 <div class="p-6">
@@ -159,7 +159,7 @@
             </div>
             <!-- kegiatan ucl -->
              <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-45 bg-gray-300 flex items-center justify-center text-gray-500 font-semibold">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day2.jpg" class="bg-cover" alt="">
                 </div>
                 <div class="p-6">
@@ -185,7 +185,7 @@
             </div>
             <!-- kegitan ke sekolah -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-48  flex items-center justify-center text-gray-500 font-semibold">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day1.jpg" alt="">
                 </div>
                 <div class="p-6">
@@ -209,9 +209,35 @@
                     </div>
                 </div>
             </div>
+            <!-- WMI -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                    <img src="/wmi.jpg" class="w-full h-[290px] object-cover object-top" alt="">
+                </div>
+                <div class="p-6">
+                    <span class="text-sm font-semibold text-indigo-600 uppercase">Mahasiswa ILKOM</span>
+                    <h2 class="mt-2 text-xl font-bold text-gray-900">
+                        Weeken Mahasiswa Ilmu Komputer (WMI)
+                    </h2>
+                    <p class="mt-2 text-gray-500 text-sm">
+                        WMi adalah kegiatan mahasiswa ilmu komputer yang berisi privat class, futsal, batminton dll
+                    </p>
+                    <div class="mt-4 flex justify-between items-center text-sm font-medium">
+                        <span class="text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="">25 Oktober - 8 November 2025</span>
+                        </span>
+                        <a href="#" class="text-sky-400 cursor-not-allowed">
+                            Akan Datang
+                        </a>
+                    </div>
+                </div>
+            </div>
             <!-- pendaki FKS -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-45 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="/pendaki.jpg" class="bg-cover" alt="">
                 </div>
                 <div class="p-6">
@@ -220,7 +246,7 @@
                         Pendaki FKS
                     </h2>
                     <p class="mt-2 text-gray-500 text-sm">
-                        PENDAKI merupakan kegiatan pelatihan dasar yang diselenggarakan oleh Himpunan Mahasiswa untuk membentuk karakter kepemimpinan, tanggung jawab, serta rasa solidaritas di kalangan mahasiswa.
+                        PENDAKI merupakan kegiatan pelatihan dasar yang diselenggarakan oleh Himpunan Mahasiswa Fakultas Kesehatan dan Sains untuk membentuk karakter kepemimpinan, tanggung jawab, serta rasa solidaritas di kalangan mahasiswa.
                     </p>
                     <div class="mt-4 flex justify-between items-center text-sm font-medium">
                         <span class="text-gray-500">

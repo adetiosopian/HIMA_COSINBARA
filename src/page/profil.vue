@@ -110,8 +110,8 @@ function h(){
         <div class="md:grid md:grid-cols-2 md:mt-[130px] block  mt-26 p-2 py-3  border-gray-300 border-[1px] shadow-lg  md:shadow-xl mx-5 rounded-2xl ">
             <div class="md:mt-5 p-4 mt-0">
                 <!-- sekilas tentang hima -->
-                <h1 class="md:text-4xl font-semibold text-[20px] text-center md:text-left  font-sans mb-5">Grow, Lead, and Innovate with COSINBARA</h1>
-                <p class="opacity-60 md:text-[16px] text-[12px]  text-justify md:pr-3 mb-5">HIMA COSINBARA hadir sebagai wadah resmi bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan dan solidaritas di antara anggotanya.</p>
+                <h1 class="md:text-[40px] font-bold text-[23px] text-center md:text-left  font-sans mb-5">Grow, Lead, and Innovate with COSINBARA</h1>
+                <p class="opacity-60 md:text-[15px] text-[10px]  text-justify md:pr-3 mb-5">HIMA COSINBARA hadir sebagai wadah resmi bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan dan solidaritas di antara anggotanya.</p>
                 <span class="h-auto w-full text-[12px] md:w-auto">
                     <button class=" hover:bg-black text-white p-2 rounded-xl w-full md:w-[200px] inline mb-3 md:mb-0 md:mr-5" @touchstart="aksi" @touchend="selesai" @click="pindah" :class="ubah">
                         Tentang Hima <div class="inline pl-3">-></div>
@@ -137,7 +137,7 @@ function h(){
             <!-- isi konten tentang hima -->
             <div class="md:mt-5 p-4 mt-0 ">
                 <h1 class="md:text-4xl font-semibold text-[20px] text-center md:text-left  font-sans mb-5" ref="tentang">Tentang COSINBARA</h1>
-                <p class="opacity-60 md:text-[16px] text-[12px]  text-justify md:pr-3 mb-5">{{ conten }}
+                <p class="opacity-60 md:text-[15px] text-[10px]  text-justify md:pr-3 mb-5">{{ conten }}
                 </p>
             </div>
             <!-- tampilan gambar logo di hp -->
@@ -193,13 +193,13 @@ function h(){
         </div>
 
         <!-- contak dan alamat hima -->
-        <div class="w-full h-auto md:h-[400px] bg-linear-to-br from-blue-500 to-blue-900 pt-4  ">
-            <h1 class="font-semibold text-[20px] text-center font-sans mb-5 pt-3 text-black" ref="hubungi">Dapat menghubungi</h1>
+        <div class="w-full h-auto md:h-[400px] bg-linear-to-br bg-gray-600 pt-4 text-white ">
+            <h1 class="font-semibold text-[20px] text-center font-sans mb-5 pt-3" ref="hubungi">Dapat menghubungi</h1>
             <div class="md:grid md:grid-cols-2 md:mt-[70px] block mt-[20px] m-2 p-5">
                 <div>
                     <div class="grid grid-cols-[30px_auto] mb-2 ">
                         <img src="../assets/gmail.png" alt="" class="inline w-[25px] h-[20px] p-[2px] bg-top bg-cover rounded-[7px] mr-2">
-                        <h6 class="inline">Email <br>himacosinbara.gmail.com</h6>
+                        <h6 class="inline">Email <br>himacosinbara@gmail.com</h6>
                     </div>
                     <div class="grid grid-cols-[30px_auto] mb-2">
                         <img src="../assets/tlp.png" alt="" class="inline w-[25px] h-[20px] p-[2px] bg-top bg-cover rounded-[7px] mr-2">

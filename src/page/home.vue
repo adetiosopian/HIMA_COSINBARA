@@ -40,15 +40,15 @@ function selesa(){
                         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
                             Bersama Mengembangkan <span class="text-yellow-400">Potensi Mahasiswa</span> Ilmu Komputer
                         </h1>
-                        <p class="text-slate-300 text-lg mb-8 max-w-xl mx-auto md:mx-0">
+                        <p class="text-slate-300 text-[12px] md:text-[15px] mb-8 max-w-xl mx-auto md:mx-0">
                             HIMA COSINBARA hadir sebagai wadah bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan.
                         </p>
                         <div class="flex justify-center md:justify-start space-x-4">
                             <div class=" text-black font-bold py-3 rounded-lg  hover:bg-yellow-300 transition duration-300" @touchstart="mulai"  @touchend="selesai" :class="aksi">
-                                <router-link to="/profil" class="px-7 py-3 rounded-lg">Kenali Kami</router-link>
+                                <router-link to="/profil" class="px-6 py-3 rounded-lg">Kenali Kami</router-link>
                             </div>
                             <div href="#" class="text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition duration-300"  @touchstart="mulaii"  @touchend="selesaii" :class="aksii">
-                                <router-link to="/daftar" class="w-full h-full px-7 py-3  rounded-lg">Daftar HIMA</router-link>
+                                <router-link to="/daftar" class="w-full h-full px-6 py-3  rounded-lg">Daftar HIMA</router-link>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ function selesa(){
         <section class="bg-slate-900 text-white">
             <div class="container mx-auto px-6 py-16 text-center">
                 <h2 class="text-3xl font-bold mb-4">Siap Bergabung Dengan Kami?</h2>
-                <p class="text-slate-300 mb-8 max-w-2xl mx-auto">Jadilah bagian dari komunitas mahasiswa Ilmu Komputer yang solid, kreatif, dan inovatif. Daftar sekarang!</p>
+                <p class="text-slate-300 mb-8 text-[12px] md:text-[15px] max-w-2xl mx-auto">Jadilah bagian dari komunitas mahasiswa Ilmu Komputer yang solid, kreatif, dan inovatif. Daftar sekarang!</p>
                 <div @touchstart="mula"  @touchend="selesa" :class="aks" class=" text-slate-900 font-bold px-0 py-3 rounded-lg hover:bg-yellow-300 transition duration-300 text-lg">
                     <router-link to="/daftar" class="w-full h-full px-22 py-3 rounded-lg ">Daftar Sekarang</router-link> 
                 </div>
@@ -96,7 +96,7 @@ function selesa(){
     
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800">
-        <div class="container mx-auto px-6 py-8">
+        <div class="container mx-auto px-4 py-8">
             <div class="text-center text-slate-400">
                 <p>&copy; 2025 HIMA COSINBARA.</p>
             </div>
