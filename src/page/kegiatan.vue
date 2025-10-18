@@ -160,7 +160,7 @@
             <!-- kegiatan ucl -->
              <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
                 <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
-                    <img src="../assets/day2.jpg" class="bg-cover" alt="">
+                    <img src="../assets/day2.jpg" class="bg-cover h-56 w-max" alt="">
                 </div>
                 <div class="p-6">
                     <span class="text-sm font-semibold text-indigo-600 uppercase">Kompetisi</span>
