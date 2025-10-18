@@ -93,7 +93,7 @@ import { ref } from 'vue';
 
 </script>
 <template>
-    <div class="bg-gray-100 flex items-center justify-center min-h-screen p-4 mt-[110px]">
+    <div class="bg-neutral-600 flex items-center justify-center min-h-screen p-4 mt-[110px]">
     <div class="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
         <!-- Header Formulir -->
         <div class="text-center mb-10">
@@ -122,7 +122,7 @@ import { ref } from 'vue';
                  <!-- Asal Sekolah -->
                  <div>
                     <label for="previousSchool" class="block text-sm font-medium text-gray-700 mb-1">Asal Sekolah</label>
-                    <input type="text" name="asal" placeholder="Contoh: SMAN 1 Jakarta" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" required>
+                    <input type="text" name="asal" placeholder="Contoh: SMAN 1 Leuwiliang" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" required>
                 </div>
             </div>
             
@@ -153,12 +153,12 @@ import { ref } from 'vue';
             <!-- uploadsertifikat -->
             <div class="mt-6">
                 <label for="reason" class="block text-sm font-medium text-gray-700 mb-1">Masukan Sertifikat</label>
-                <input type="file" accept="image/*" name="gambar" class="border border-gray-300 rounded-lg w-max px-4 py-2" required/>
+                <input type="file" accept="image/*" name="gambar" class="border border-gray-300 rounded-lg w-full  px-2 md:px-4 py-2" required/>
             </div>
             <!-- upload bukti folowig -->
             <div class="mt-6">
                 <label for="reason" class="block text-sm font-medium text-gray-700 mb-1">Masukan Bukti Folow IG COSINBARA</label>
-                <input type="file" accept="image/*" name="gambar1" class="border border-gray-300 rounded-lg w-max px-4 py-2" required />
+                <input type="file" accept="image/*" name="gambar1" class="border border-gray-300 rounded-lg w-full px-2 md:px-4 py-2" required />
             </div>
             <!-- Tombol Submit -->
             <div class="mt-10 text-center">

@@ -217,7 +217,8 @@ function h(){
                     </div>
                 </div>
             </div>
-            <h1 class="text-center mt-4 md:mt-20">© 2025 COSINBARA.</h1>
+            <p class="text-center mt-4 md:mt-20">&copy; 2025 HIMA COSINBARA.</p>
+            
         </div>
     </div>
 </template>

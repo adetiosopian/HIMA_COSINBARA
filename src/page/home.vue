@@ -4,42 +4,105 @@ import { ref } from 'vue';
 
 
 // animasi tommbol
-var aksi=ref('bg-gray-500')
+var aksi=ref('bg-yellow-400')
 function mulai(){
-    aksi.value='bg-gray-800'
+    aksi.value='bg-yellow-300'
 }
 function selesai(){
-    aksi.value='bg-gray-500'
+    aksi.value='bg-yellow-400'
 }
-var aksii=ref('bg-blue-500')
+var aksii=ref('bg-slate-700')
 function mulaii(){
-    aksii.value='bg-blue-700'
+    aksii.value='bg-slate-600'
 }
 function selesaii(){
-    aksii.value='bg-blue-500'
+    aksii.value='bg-slate-700'
+}
+var aks=ref('bg-yellow-400')
+function mula(){
+    aks.value='bg-yellow-300'
+}
+function selesa(){
+    aks.value='bg-yellow-400'
 }
 </script>
 <template>
-
-    <div class="bg-[url(/bg1.jpg)] w-full h-screen overflow-y-hidden overflow-x-hidden mt-20 md:mt-25 pt-5 border-gray-300 border-[1px] shadow-lg  md:shadow-xl rounded-2xl ">
-        <div class=" md:grid md:grid-cols-2 grid-cols-1 p-3 pt-5">
-            <!-- isi tampilan di hp -->
-            <div class=" flex flex-col justify-center items-start md:px-14 px-5 ">
-                <h1 class="md:text-5xl text-[20px] leading-tight font-sans font-bold tes mb-4 whitespace-normal md:whitespace-pre-line md:mt-5 text-center md:text-left uppercase">Bersama <span class="text-blue-500">Mengembangkan</span> Potensi <span class="text-blue-500">Mahasiswa</span> Ilmu <span class="text-blue-500">Komputer</span></h1>
-                <p class="text-gray-700 hidden md:block md:text-xl ">HIMA COSINBARA hadir sebagai wadah resmi bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan dan solidaritas di antara anggotanya.</p>
-            </div>
-            <div class="flex flex-col justify-center items-center">
-                <!-- isi tampilan di pc -->
-                <div class="md:h-[250px] md:w-[350px] h-[200px] w-[90%] mt-3 rounded-2xl text-center bg-[url(./assets/gambar1.jpg)] bg-cover bg-center "></div>
-                <p class="text-gray-700 md:hidden block text-[12px] p-6 text-justify font-bold">HIMA COSINBARA hadir sebagai wadah resmi bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan dan solidaritas di antara anggotanya.</p>
-                <div class="flex gap-6 " >
-                    <span class=" rounded-2xl text-white font-bold p-5 mt-5 md:hover:scale-110 md:hover:bg-gray-700"  @touchstart="mulai"  @touchend="selesai" :class="aksi"><router-link to="/profil">Mengenal Lebih</router-link></span>
-                    <span class=" rounded-2xl text-white font-bold p-5 mt-5  hover:scale-110 md:hover:bg-blue-700" @touchstart="mulaii"  @touchend="selesaii" :class="aksii"><router-link to="/daftar">Daftar HIMA</router-link></span>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center text-white" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop');">
+            <!-- Overlay Gelap -->
+            <div class="absolute inset-0 bg-slate-900/70"></div>
+            
+            <div class="container mx-auto px-6 relative z-10 pt-32 pb-20">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Kolom Teks -->
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                            Bersama Mengembangkan <span class="text-yellow-400">Potensi Mahasiswa</span> Ilmu Komputer
+                        </h1>
+                        <p class="text-slate-300 text-lg mb-8 max-w-xl mx-auto md:mx-0">
+                            HIMA COSINBARA hadir sebagai wadah bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan.
+                        </p>
+                        <div class="flex justify-center md:justify-start space-x-4">
+                            <div class=" text-black font-bold py-3 rounded-lg  hover:bg-yellow-300 transition duration-300" @touchstart="mulai"  @touchend="selesai" :class="aksi">
+                                <router-link to="/profil" class="px-7 py-3 rounded-lg">Kenali Kami</router-link>
+                            </div>
+                            <div href="#" class="text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition duration-300"  @touchstart="mulaii"  @touchend="selesaii" :class="aksii">
+                                <router-link to="/daftar" class="w-full h-full px-7 py-3  rounded-lg">Daftar HIMA</router-link>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kolom Ilustrasi -->
+                    <div class="md:w-1/2">
+                        <div class="bg-slate-800/50 p-6 rounded-2xl shadow-2xl backdrop-blur-sm">
+                           <svg class="w-full h-auto" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" /> <!-- yellow-400 -->
+                                        <stop offset="100%" style="stop-color:#fde047;stop-opacity:1" /> <!-- yellow-300 -->
+                                    </linearGradient>
+                                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#334155;stop-opacity:1" /> <!-- slate-700 -->
+                                        <stop offset="100%" style="stop-color:#475569;stop-opacity:1" /> <!-- slate-600 -->
+                                    </linearGradient>
+                                </defs>
+                                <!-- Abstract shapes representing code, connection, and growth -->
+                                <rect x="20" y="20" width="160" height="80" rx="10" fill="url(#grad2)" />
+                                <circle cx="50" cy="50" r="15" fill="#f8fafc"/>
+                                <path d="M 45 50 L 55 50 M 50 45 L 50 55" stroke="url(#grad1)" stroke-width="2" />
+                                <rect x="80" y="40" width="80" height="8" rx="4" fill="#f8fafc" opacity="0.8"/>
+                                <rect x="80" y="55" width="60" height="8" rx="4" fill="#f8fafc" opacity="0.6"/>
+                                <rect x="80" y="70" width="70" height="8" rx="4" fill="#f8fafc" opacity="0.4"/>
+                                <path d="M 65 55 Q 75 65, 80 50" stroke="url(#grad1)" stroke-width="3" fill="none" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Bagian CTA (Call to Action) -->
+        <section class="bg-slate-900 text-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">Siap Bergabung Dengan Kami?</h2>
+                <p class="text-slate-300 mb-8 max-w-2xl mx-auto">Jadilah bagian dari komunitas mahasiswa Ilmu Komputer yang solid, kreatif, dan inovatif. Daftar sekarang!</p>
+                <div @touchstart="mula"  @touchend="selesa" :class="aks" class=" text-slate-900 font-bold px-0 py-3 rounded-lg hover:bg-yellow-300 transition duration-300 text-lg">
+                    <router-link to="/daftar" class="w-full h-full px-22 py-3 rounded-lg ">Daftar Sekarang</router-link> 
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-8">
+            <div class="text-center text-slate-400">
+                <p>&copy; 2025 HIMA COSINBARA.</p>
+            </div>
         </div>
-        
-    </div>
+    </footer>
+    
 </template>
 
 

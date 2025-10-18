@@ -116,17 +116,17 @@ function tutup(){
       <!-- tampilan navbar di hp -->
       <div class="md:hidden fixed bg-white w-full h-full -translate-y-5" :class="muncul" @click="tutup"></div>
       <div class="fixed md:hidden bg-gray-900 rounded-r-2xl -translate-y-[30px] p-4 h-full w-2/3 text-[15px] z-100 shadow-lg border-1 " :class="hi">
-        <span class="block w-full mb-1 mt-5 text-white " @touchstart="ubah" :class="w" @touchend="udahan" @click="tutup"><router-link to="/" class="w-full">HOME</router-link></span><br>
+        <span class="block w-full mb-1 mt-5 text-white " @touchstart="ubah" :class="w" @touchend="udahan" @click="tutup"><router-link to="/" class="w-full pr-[150px] ">HOME</router-link></span><br>
         <div class="w-full h-[1px] bg-white"></div> <br>
-        <span class="block mb-1 w-full text-white" @touchstart="uba" :class="wa" @touchend="udaha" @click="tutup"><router-link to="/profil" class="w-full">PROFIL</router-link></span><br>
+        <span class="block mb-1 w-full text-white" @touchstart="uba" :class="wa" @touchend="udaha" @click="tutup"><router-link to="/profil" class="w-full pr-[150px]">PROFIL</router-link></span><br>
         <div class="w-full h-[1px] bg-white"></div> <br>
-        <span class="block mb-1 w-full text-white" @touchstart="ub" :class="war" @touchend="udah" @click="tutup"><router-link to="/kegiatan" class="w-full">AGENDA</router-link></span><br>
+        <span class="block mb-1 w-full text-white" @touchstart="ub" :class="war" @touchend="udah" @click="tutup"><router-link to="/kegiatan" class="w-full pr-[150px]">AGENDA</router-link></span><br>
         <div class="w-full h-[1px] bg-white"></div> <br>
-        <span class="block mb-1 w-full text-white" @touchstart="u" :class="wan" @touchend="uda" @click="tutup"><router-link to="/struktur" class="w-full">STRUKTUR</router-link></span><br>
+        <span class="block mb-1 w-full text-white" @touchstart="u" :class="wan" @touchend="uda" @click="tutup"><router-link to="/struktur" class="w-full pr-[150px]">STRUKTUR</router-link></span><br>
         <div class="w-full h-[1px] bg-white"></div> <br>
-        <span class="block w-full mb-1 text-white" @touchstart="h" :class="warna" @touchend="ud" @click="tutup"><router-link to="/toko" class="w-full">TOKO</router-link></span><br>
+        <span class="block w-full mb-1 text-white" @touchstart="h" :class="warna" @touchend="ud" @click="tutup"><router-link to="/toko" class="w-full pr-[150px]">TOKO</router-link></span><br>
         <div class="w-full h-[1px]  bg-white"></div> <br>
-        <span class="block w-full mb-1 text-white" @touchstart="hu" :class="warna" @touchend="udi" @click="tutup"><router-link to="/advo" class="w-full">Advo</router-link></span><br>
+        <span class="block w-full mb-1 text-white" @touchstart="hu" :class="warna" @touchend="udi" @click="tutup"><router-link to="/advo" class="w-full pr-[150px]">Advo</router-link></span><br>
         <div class="w-full h-[1px]  bg-white"></div> <br>
       </div>
       <!-- tampilan navbar di pc atau leptop -->
