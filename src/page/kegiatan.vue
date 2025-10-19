@@ -20,7 +20,7 @@
          <!-- FKS  -->
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="/aksi.jpg" alt="">
                 </div>
                 <div class="p-6">
@@ -48,7 +48,7 @@
             </div>
             <!-- ilcamp -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold ">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold ">
                     <img src="/ilcamp.jpg" class="bg-cover" alt="">
                 </div>
                 <div class="p-6">
@@ -75,7 +75,7 @@
 
             <!-- Card seminar1 -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day4.jpg" alt="">
                 </div>
                 <div class="p-6">
@@ -104,7 +104,7 @@
 
             <!-- Card seminar2-->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day4,1.png" class="object-cover w-full h-full " alt="">
                 </div>
                 <div class="p-6">
@@ -133,7 +133,7 @@
 
             <!-- Card Kegiatan desain-->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="../assets/day3.png" alt="">
                 </div>
                 <div class="p-6">
@@ -159,8 +159,8 @@
             </div>
             <!-- kegiatan ucl -->
              <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
-                    <img src="../assets/day2.jpg" class="bg-cover" alt="">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                    <img src="../assets/day2.jpg" class="bg-cover h-[200px] " alt="">
                 </div>
                 <div class="p-6">
                     <span class="text-sm font-semibold text-indigo-600 uppercase">Kompetisi</span>
@@ -185,8 +185,8 @@
             </div>
             <!-- kegitan ke sekolah -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
-                    <img src="../assets/day1.jpg" alt="">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                    <img src="../assets/day1.jpg" class="object-cover h-[200px]" alt="">
                 </div>
                 <div class="p-6">
                     <span class="text-sm font-semibold text-blue-600 uppercase">Cosinbara goes to Scool</span>
@@ -211,8 +211,8 @@
             </div>
             <!-- WMI -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
-                    <img src="/wmi.jpg" class="w-full h-[290px] object-cover object-top" alt="">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                    <img src="/wmi.jpg" class="w-full h-[240px] object-cover object-top" alt="">
                 </div>
                 <div class="p-6">
                     <span class="text-sm font-semibold text-indigo-600 uppercase">Mahasiswa ILKOM</span>
@@ -237,7 +237,7 @@
             </div>
             <!-- pendaki FKS -->
             <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
-                <div class="h-56 bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
+                <div class="h-[200px] bg-gray-300 flex items-center justify-center overflow-hidden text-gray-500 font-semibold">
                     <img src="/pendaki.jpg" class="bg-cover" alt="">
                 </div>
                 <div class="p-6">
