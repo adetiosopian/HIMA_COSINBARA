@@ -16,18 +16,18 @@
                 <!-- BPH -->
                 <div class="flex justify-center mb-10 px-10 ">
                     <div class=" text-white w-full h-auto md:w-[300px] md:h-[350px] rounded-2xl border-[10px]">
-                        <img src="../assets/foto/3.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/3.jpg" class="rounded-2xl md:h-full md:w-full" alt="">
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10 ">
                     <div class="text-white lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px] w-full h-auto  "> 
-                        <img src="../assets/foto/4.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/4.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/5.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/5.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/6.jpg" class="rounded-2xl" alt=""></img>
+                        <img src="../assets/foto/6.jpg" class="rounded-2xl lg:h-full lg:w-full" alt=""></img>
                     </div>
                 </div>
                 <div class="flex justify-center mx-7 my-5 md:my-12">
@@ -41,38 +41,38 @@
     
                 <div class="flex justify-center mb-10 px-10 ">
                     <div class=" text-white w-full h-auto md:w-[300px] md:h-[350px] rounded-2xl border-[10px]">
-                        <img src="../assets/foto/8.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/8.jpg" class="rounded-2xl md:h-full md:w-full" alt="">
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10 mb-10">
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px]  rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/9.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/9.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/10.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/10.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/11.jpg" class="rounded-2xl" alt=""></img>
+                        <img src="../assets/foto/11.jpg" class="rounded-2xl lg:h-full lg:w-full" alt=""></img>
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center justify-center md:space-x-3 lg:space-x-5  px-10 mb-10">
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/12.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/12.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/13.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/13.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px] ">  
-                        <img src="../assets/foto/14.jpg" class="rounded-2xl" alt=""></img>
+                        <img src="../assets/foto/14.jpg" class="rounded-2xl lg:h-full lg:w-full" alt=""></img>
                     </div>
                     
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center justify-center md:space-x-3 lg:space-x-5 px-10 md:px-[150px] ">
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/15.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/15.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/16.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/16.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     
                     
@@ -88,26 +88,26 @@
     
                 <div class="flex justify-center mb-10 px-10 ">
                     <div class=" text-white w-full h-auto md:w-[300px] md:h-[350px] rounded-2xl border-[10px]">
-                        <img src="../assets/foto/18.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/18.jpg" class="rounded-2xl md:h-full md:w-full" alt="">
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10 mb-10 ">
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/19.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/19.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/20.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/20.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/21.jpg" class="rounded-2xl" alt=""></img>
+                        <img src="../assets/foto/21.jpg" class="rounded-2xl lg:h-full lg:w-full" alt=""></img>
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10 md:px-[150px]">
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/22.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/22.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/23.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/23.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div> 
                 </div>
                 <div class="flex justify-center mx-7 my-5 md:my-12">
@@ -121,29 +121,29 @@
     
                 <div class="flex justify-center mb-10 px-10 ">
                     <div class=" text-white w-full h-auto md:w-[300px] md:h-[350px] rounded-2xl border-[10px]">
-                        <img src="../assets/foto/25.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/25.jpg" class="rounded-2xl md:h-full md:w-full" alt="">
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10 mb-10 ">
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/26.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/26.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/27.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/27.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/28.jpg" class="rounded-2xl" alt=""></img>
+                        <img src="../assets/foto/28.jpg" class="rounded-2xl lg:h-full lg:w-full" alt=""></img>
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10 ">
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/29.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/29.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/30.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/30.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/31.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/31.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                 </div>
                 <div class="flex justify-center mx-7 my-5 md:my-12">
@@ -157,18 +157,18 @@
     
                 <div class="flex justify-center mb-10 px-10 ">
                     <div class=" text-white w-full h-auto md:w-[300px] md:h-[350px] rounded-2xl border-[10px]">
-                        <img src="../assets/foto/33.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/33.jpg" class="rounded-2xl md:h-full md:w-full" alt="">
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10">
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/34.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/34.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/35.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/35.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/36.jpg" class="rounded-2xl" alt=""></img>
+                        <img src="../assets/foto/36.jpg" class="rounded-2xl lg:h-full lg:w-full" alt=""></img>
                     </div>
                 </div>
                 
@@ -183,29 +183,29 @@
     
                 <div class="flex justify-center mb-10 px-10 ">
                     <div class=" text-white w-full h-auto md:w-[300px] md:h-[350px] rounded-2xl border-[10px]">
-                        <img src="../assets/foto/38.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/38.jpg" class="rounded-2xl md:h-full md:w-full" alt="">
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10 mb-10">
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/39.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/39.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/40.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/40.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class=" text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/41.jpg" class="rounded-2xl" alt=""></img>
+                        <img src="../assets/foto/41.jpg" class="rounded-2xl lg:h-full lg:w-full" alt=""></img>
                     </div>
                 </div>
                 <div class="md:flex grid grid-cols-1 gap-10 justify-items-center md:justify-center md:space-x-3 lg:space-x-5 px-10">
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]"> 
-                        <img src="../assets/foto/42.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/42.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/43.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/43.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                     <div class="text-white w-full h-auto lg:w-[300px] lg:h-[350px] rounded-2xl border-[10px]">  
-                        <img src="../assets/foto/44.jpg" class="rounded-2xl" alt="">
+                        <img src="../assets/foto/44.jpg" class="rounded-2xl lg:h-full lg:w-full" alt="">
                     </div>
                 </div>
                 <div class="flex justify-center mx-7 my-5 md:my-12">
