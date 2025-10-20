@@ -107,25 +107,29 @@ function h(){
 </script>
 <template>
     <div class=" w-full h-auto ">
-        <div class="md:grid md:grid-cols-2 md:mt-[130px] block  mt-26 p-2 py-3  border-gray-300 border-[1px] shadow-lg  md:shadow-xl mx-5 rounded-2xl ">
+        <div class="lg:grid lg:grid-cols-2 lg:mt-[130px] block  mt-26 p-2 py-3  border-gray-300 border-[1px] shadow-lg  lg:shadow-xl mx-5 rounded-2xl ">
             <div class="md:mt-5 p-4 mt-0">
                 <!-- sekilas tentang hima -->
-                <h1 class="md:text-[40px] font-bold text-[23px] text-center md:text-left  font-sans mb-5">Grow, Lead, and Innovate with COSINBARA</h1>
-                <p class="opacity-60 md:text-[15px] text-[10px]  text-justify md:pr-3 mb-5">HIMA COSINBARA hadir sebagai wadah resmi bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan dan solidaritas di antara anggotanya.</p>
-                <span class="h-auto w-full text-[12px] md:w-auto">
+                <h1 class="lg:text-[40px] md:text-[35px] font-bold text-[23px] text-center lg:text-left font-sans mb-5 md:hidden lg:block block">Grow, Lead, and Innovate with COSINBARA</h1>
+                <h1 class="lg:text-[40px] md:text-[35px] font-bold text-[23px] text-center lg:text-left font-sans mb-5 hidden md:block lg:hidden">Grow, Lead, and Innovate <br> with COSINBARA</h1>
+                <p class="opacity-60 lg:text-[15px] md:text-[15px] text-[10px] md:text-center lg:text-justify text-justify md:pr-3 mb-5">HIMA COSINBARA hadir sebagai wadah resmi bagi seluruh mahasiswa Ilmu Komputer untuk menyalurkan aspirasi, mengembangkan potensi diri, serta memperkuat rasa persaudaraan dan solidaritas di antara anggotanya.</p>
+                <span class="h-auto w-full text-[12px] lg:w-auto md:flex md:justify-center lg:justify-start ">
                     <button class=" hover:bg-black text-white p-2 rounded-xl w-full md:w-[200px] inline mb-3 md:mb-0 md:mr-5" @touchstart="aksi" @touchend="selesai" @click="pindah" :class="ubah">
                         Tentang Hima <div class="inline pl-3">-></div>
                     </button>
                     <button class="hover:bg-black text-white p-2 rounded-xl w-full md:w-[200px] inline" @touchstart="aksi1" @touchend="selesai1" :class="ubah1" @click="pindah1">Hubungi Kami</button>
                 </span>
                 <!-- gambar icon  -->
-                <div class="md:space-x-5 space-x-[10px] text-gray-500 md:text-20 text-15 p-1 mt-4 md:mt-2">
-                    <span><img src="../assets/kelompok.jpg" alt="" class="inline size-9 bg-cover bg-center object-center">Cooperation </span>
-                    <span><img src="../assets/memimpin.jpg" alt="" class="inline size-9 bg-cover ">Leadership</span>
-                    <span class="ml-20 md:m-0"><img src="../assets/creatif.jpg" alt="" class="inline size-9 bg-cover ">Creativity</span>
+                <div class="md:space-x-5 space-x-[5px] text-gray-500 md:text-20 text-15 sm:text-sm p-1 mt-4 md:mt-2 flex justify-center md:flex md:justify-center lg:justify-start  ">
+                    <span><img src="../assets/kelompok.jpg" alt="" class="inline size-9 bg-cover object-center">Cooperation </span>
+                    <span><img src="../assets/memimpin.jpg" alt="" class="inline size-9 bg-cover object-center ">Leadership</span>
+                    <span class="hidden md:block"><img src="../assets/creatif.jpg" alt="" class="inline size-9 bg-cover object-center">Creativity</span>
                 </div>
-            </div>
-            <!-- gambar bersama atau utama-->
+                <div class="flex justify-center p-1 md:hidden">
+                    <span class="text-15 text-gray-500 "><img src="../assets/creatif.jpg" alt="" class="inline size-9 bg-cover object-center">Creativity</span>
+                </div>
+                <!-- gambar bersama atau utama-->
+                </div>
             <div><img src="../assets/gambar-bersama.jpg" class="rounded-2xl object-cover" alt=""></div>
         </div>
         <div class="hidden md:block  h-1 w-screen mt-5"></div>
@@ -151,7 +155,7 @@ function h(){
             <!-- gambar dan link agenda atau kegiatan hima -->
             <div class="md:mt-5 p-4 mt-0 ">
                 <h1 class="md:text-4xl font-semibold text-[20px] text-center font-sans mb-5">Agenda HIMA</h1>
-                <div class="grid md:grid-cols-3 grid-cols-1 gap-5  rounded-xl md:p-5 ">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5  rounded-xl md:p-5 ">
                     <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center" :class="a" @click="e"><div class=" w-full h-full"><img src="../assets/day4,1.png" alt="" class="w-full h-full object-cover rounded-xl hover:scale-110"></div></div>
                     <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center" :class="b" @click="f"><div class=" w-full h-full"><img src="../assets/day3.png" alt="" class="w-full h-full object-cover rounded-xl hover:scale-110"></div></div>
                     <div class="md:w-full md:h-[280px] border-2 rounded-xl w-[270px] h-[170px] text-center place-content-center" :class="c" @click="g"><div class=" w-full h-full"><img src="../assets/day2.jpg" alt="" class="w-full h-full object-cover rounded-xl hover:scale-110"></div></div>
@@ -164,25 +168,25 @@ function h(){
         <!-- gambar dan link bph dan struktur organigram -->
         <div class="  md:mt-[70px] block mt-[20px] m-2 p-2 mb-5 border-gray-200 md:shadow-xl border-[1px] shadow-lg mx-5 rounded-2xl ">
             <h1 class="md:text-4xl font-semibold text-[20px] text-center font-sans mb-2">Badan Pengurus Harian</h1>
-            <div class="h-40 md:h-[600px] overflow-y-hidden overflow-auto p-3">
+            <div class="h-40 lg:h-[600px] md:h-[500px] overflow-y-hidden overflow-auto p-3">
                 <div class="grid md:grid-cols-4 grid-cols-4 md:gap-10 gap-16 rounded-xl md:p-10 h-50 w-full ">
-                    <div class=" md:w-full md:h-[350px]  rounded-xl w-full  text-center  transition-transform duration-300" :class="kedepan" @click="fokus">
-                        <div class=" text-white w-30 h-50  md:w-[400px] md:h-[450px] rounded-2xl"> 
+                    <div class=" md:w-full lg:h-[350px] md:h-[250px] rounded-xl w-full  text-center  transition-transform duration-300" :class="kedepan" @click="fokus">
+                        <div class=" text-white w-30 h-50 md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-2xl"> 
                         <img src="../assets/foto/3.jpg" class="rounded-xl" alt="">
                         </div>
                     </div>
-                    <div class=" md:w-full md:h-[350px]  rounded-xl w-full h-auto text-center  transition-transform duration-300" :class="kedepan1" @click="fokus1">
-                        <div class=" text-white w-30 h-50 md:w-[400px] md:h-[450px] rounded-2xl "> 
+                    <div class=" md:w-full lg:h-[350px] md:h-[250px] rounded-xl w-full h-auto text-center  transition-transform duration-300" :class="kedepan1" @click="fokus1">
+                        <div class=" text-white w-30 h-50 md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-2xl "> 
                         <img src="../assets/foto/4.jpg" class="rounded-xl" alt="">
                         </div>
                     </div>
-                    <div class="md:w-full md:h-[350px]  rounded-xl w-full h-auto text-center  transition-transform duration-300" :class="kedepan2" @click="fokus2">
-                        <div class=" text-white w-30 h-50 md:w-[400px] md:h-[450px] rounded-2xl"> 
+                    <div class="md:w-full lg:h-[350px] md:h-[250px] rounded-xl w-full h-auto text-center  transition-transform duration-300" :class="kedepan2" @click="fokus2">
+                        <div class=" text-white w-30 h-50 md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-2xl"> 
                         <img src="../assets/foto/5.jpg" class="rounded-xl" alt="">
                         </div>
                     </div>
-                    <div class="md:w-full md:h-[350px] rounded-xl w-full h-auto text-center  transition-transform duration-300" :class="kedepan3" @click="fokus3">
-                        <div class=" text-white w-30 h-50 md:w-[400px] md:h-[450px] rounded-2xl"> 
+                    <div class="md:w-full lg:h-[350px] md:h-[250px] rounded-xl w-full h-auto text-center  transition-transform duration-300" :class="kedepan3" @click="fokus3">
+                        <div class=" text-white w-30 h-50 md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] rounded-2xl"> 
                         <img src="../assets/foto/6.jpg" class="rounded-xl" alt="">
                         </div>
                     </div>
@@ -203,7 +207,7 @@ function h(){
                     </div>
                     <div class="grid grid-cols-[30px_auto] mb-2">
                         <img src="../assets/tlp.png" alt="" class="inline w-[25px] h-[20px] p-[2px] bg-top bg-cover rounded-[7px] mr-2">
-                        <h6 class="inline">Telepon <br>+62123456789</h6>
+                        <h6 class="inline">Telepon <br>0813-1669-2304</h6>
                     </div>
                 </div>
                 <div>

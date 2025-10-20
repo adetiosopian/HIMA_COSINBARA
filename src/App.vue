@@ -98,39 +98,39 @@ function tutup(){
   <!-- navbar -->
   <div class="p-0 m-0">
     <div class="bg-white fixed h-max w-full flex  gap-10 p-5 pr-30 font-bold font-sans  text-[12px] space-x-7 text-gray-600 shadow-md z-100 ">
-      <div class=" size-[55px] md:size-18 flex md:gap-2 ml-0 md:ml-5 font-semibold font-serif">
+      <div class=" size-[55px] md:size-18 flex md:gap-0 ml-0 md:ml-5 font-semibold font-serif">
         <img src="./assets/logo hima.png"  alt="poto hima">
-        <div class="p:3 ml-1 md:p-4 md:-pl-1 mt-2">
+        <div class="ml-1 md:ml-0 md:p-4 md:-pl-1 mt-2">
           <h1 class="md:text-2xl text-[15px]">COSINBARA</h1>
           <h1 class="md:text-18 text-[8px]">Computer Sains Umbara</h1>
         </div>
       </div>
       <!-- tampilan pemanggilan navbar di hp (sandwid) -->
-      <div class="md:hidden fixed right-5 top-10 h-9 z-50 flex flex-col gap-[0.5px] cursor-pointer" @click="tampil">
-        <div class="w-[25px] h-[1px]  bg-black/70" :class="atas"></div>
-        <div class="w-[25px] h-[1px] bg-black/70" :class="tengah1"></div>
-        <div class="w-[25px] h-[1px] bg-black/70" :class="tengah2"></div>
-        <div class="w-[25px] h-[1px] bg-black/70" :class="bawah"></div>
+      <div class="lg:hidden fixed right-5 md:right-7 top-10 h-9 z-50 flex flex-col gap-[0.5px] cursor-pointer" @click="tampil">
+        <div class="w-[30px] h-[1px] md:w-[35px] md:h-[2px] bg-black/70" :class="atas"></div>
+        <div class="w-[30px] h-[1px] md:w-[35px] md:h-[2px] bg-black/70" :class="tengah1"></div>
+        <div class="w-[30px] h-[1px] md:w-[35px] md:h-[2px] bg-black/70" :class="tengah2"></div>
+        <div class="w-[30px] h-[1px] md:w-[35px] md:h-[2px] bg-black/70" :class="bawah"></div>
       </div>
 
       <!-- tampilan navbar di hp -->
-      <div class="md:hidden fixed bg-white w-full h-full -translate-y-5" :class="muncul" @click="tutup"></div>
-      <div class="fixed md:hidden bg-gray-900 rounded-r-2xl -translate-y-[30px] p-4 h-full w-2/3 text-[15px] z-100 shadow-lg border-1 " :class="hi">
+      <div class="lg:hidden fixed bg-white w-full h-full -translate-y-5" :class="muncul" @click="tutup"></div>
+      <div class="fixed lg:hidden bg-gray-900 rounded-r-2xl -translate-y-[30px] p-4 h-full w-2/3 text-[15px] md:text-[20px] z-100 shadow-lg border-1 " :class="hi">
         <span class="block w-full mb-1 mt-5 text-white " @touchstart="ubah" :class="w" @touchend="udahan" @click="tutup"><router-link to="/" class="w-full pr-[150px] ">HOME</router-link></span><br>
-        <div class="w-full h-[1px] bg-white"></div> <br>
+        <div class="w-full h-[1px] md:h-[2px] bg-white"></div> <br>
         <span class="block mb-1 w-full text-white" @touchstart="uba" :class="wa" @touchend="udaha" @click="tutup"><router-link to="/profil" class="w-full pr-[150px]">PROFIL</router-link></span><br>
-        <div class="w-full h-[1px] bg-white"></div> <br>
+        <div class="w-full h-[1px] md:h-[2px] bg-white"></div> <br>
         <span class="block mb-1 w-full text-white" @touchstart="ub" :class="war" @touchend="udah" @click="tutup"><router-link to="/kegiatan" class="w-full pr-[150px]">AGENDA</router-link></span><br>
-        <div class="w-full h-[1px] bg-white"></div> <br>
+        <div class="w-full h-[1px] md:h-[2px] bg-white"></div> <br>
         <span class="block mb-1 w-full text-white" @touchstart="u" :class="wan" @touchend="uda" @click="tutup"><router-link to="/struktur" class="w-full pr-[150px]">STRUKTUR</router-link></span><br>
-        <div class="w-full h-[1px] bg-white"></div> <br>
+        <div class="w-full h-[1px] md:h-[2px] bg-white"></div> <br>
         <span class="block w-full mb-1 text-white" @touchstart="h" :class="warna" @touchend="ud" @click="tutup"><router-link to="/toko" class="w-full pr-[150px]">TOKO</router-link></span><br>
-        <div class="w-full h-[1px]  bg-white"></div> <br>
+        <div class="w-full h-[1px] md:h-[2px]  bg-white"></div> <br>
         <span class="block w-full mb-1 text-white" @touchstart="hu" :class="warna" @touchend="udi" @click="tutup"><router-link to="/advo" class="w-full pr-[150px]">Advo</router-link></span><br>
-        <div class="w-full h-[1px]  bg-white"></div> <br>
+        <div class="w-full h-[1px] md:h-[2px] bg-white"></div> <br>
       </div>
       <!-- tampilan navbar di pc atau leptop -->
-      <div class="w-full h-max md:flex md:text-[15px] md:gap-5 p-5 pr-1 font-bold font-sans justify-end text-[5px] sm:hidden lg:text-[18px] lg:gap-10 space-x-7 hidden  ">
+      <div class="w-full h-max lg:flex md:text-[15px] md:gap-2 p-5 lg:ml-56 font-bold font-sans lg:justify-end text-[5px] sm:hidden lg:text-[18px] lg:gap-7 space-x-5 hidden  ">
         <span class="hover:scale-125 uppercase"><router-link to="/">Home</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/profil">Profil</router-link></span>
         <span class="hover:scale-125 uppercase"><router-link to="/kegiatan">AGENDA</router-link></span>
