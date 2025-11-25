@@ -1,0 +1,88 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Himpunan Mahasiswa Ilmu Komputer (HIMA COSINBARA)",
+  "alternateName": "HIMA COSINBARA UMBARA",
+  "url": "https://himacosinbara.com",
+  "logo": "https://himacosinbara.com/logohima.png",
+  "description": "Struktur organisasi dan data kegiatan HIMA COSINBARA Universitas Muhammadiyah Bogor Raya.",
+  "creator": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universitas Muhammadiyah Bogor Raya",
+    "url": "https://umbara.ac.id"
+  },
+  "hasPart": [
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Badan Pengurus Harian",
+      "member": [
+        { "@type": "Person", "name": "Adam Priatna", "jobTitle": "Ketua Umum" },
+        { "@type": "Person", "name": "Fitrah Averoes", "jobTitle": "Wakil Ketua Umum" },
+        { "@type": "Person", "name": "Agnes Anggraeni", "jobTitle": "Sekretaris Umum" },
+        { "@type": "Person", "name": "Mutia Hapi Agisti", "jobTitle": "Bendahara Umum" }
+      ]
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Bidang Pengembang Sumber Daya Manusia",
+      "member": [
+        { "@type": "Person", "name": "M. Zaki Fathurr", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Satria Krisnandi A.S", "jobTitle": "Ketua Bidang" },
+        { "@type": "Person", "name": "M. Dezan Fadilah", "jobTitle": "Sekretaris Bidang" },
+        { "@type": "Person", "name": "Fathir Rizki A", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "M. Alif Naufal Hidayat", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Tubagus Ahmad D.F", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "M. Ferdiansah", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Kisrul Khaira", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Nazmi M. Setiawan", "jobTitle": "Anggota" }
+      ]
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Bidang Advokasi",
+      "member": [
+        { "@type": "Person", "name": "Najisah Putri Adi Widya", "jobTitle": "Anggota Bidang" },
+        { "@type": "Person", "name": "Syifa Anastasya", "jobTitle": "Ketua Bidang" },
+        { "@type": "Person", "name": "Putri Ramadhani", "jobTitle": "Sekretaris Bidang" },
+        { "@type": "Person", "name": "M. Firdaus Rahmadian", "jobTitle": "Anggota Bidang" },
+        { "@type": "Person", "name": "Windi Astuti", "jobTitle": "Anggota Bidang" },
+        { "@type": "Person", "name": "Ridho Nugraha", "jobTitle": "Anggota Bidang" }
+      ]
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Bidang Kewirausahaan",
+      "member": [
+        { "@type": "Person", "name": "Aulia Viananti", "jobTitle": "Ketua Bidang" },
+        { "@type": "Person", "name": "Nur Wulandari", "jobTitle": "Sekretaris Bidang" },
+        { "@type": "Person", "name": "Griya Panca Kasuma Putra", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Anggun Adilah Sukardi", "jobTitle": "Anggota" }
+      ]
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Bidang Media Informasi dan Komunikasi",
+      "member": [
+        { "@type": "Person", "name": "Ayatur Rohagi", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Nayla Nurmila", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Naila Lintang Al Faruq", "jobTitle": "Sekretaris Bidang" },
+        { "@type": "Person", "name": "M. Dzaki Fakhzan Ajfairi", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "M. Zaky Haris", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Rasya Dwi Rabbani", "jobTitle": "Anggota" }
+      ]
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Bidang Teknologi dan Pengembangan IT",
+      "member": [
+        { "@type": "Person", "name": "Andhika Akbar Setiawan", "jobTitle": "Ketua Bidang" },
+        { "@type": "Person", "name": "Ahmad Saebatul", "jobTitle": "Sekretaris Bidang" },
+        { "@type": "Person", "name": "M. Reza Junianto", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Abdul Muluk Adna", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Ade Tio Sopian", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "M. Rifky Ruhaniyah", "jobTitle": "Anggota" },
+        { "@type": "Person", "name": "Putri Amelia Nurahman", "jobTitle": "Anggota" }
+      ]
+    }
+  ]
+}

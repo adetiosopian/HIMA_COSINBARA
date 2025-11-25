@@ -1,0 +1,8 @@
+# robots.txt - Generated automatically
+User-agent: *
+Disallow: /admin/
+
+# Sitemap untuk mesin pencari
+Sitemap: https://sinstore.himacosinbara.com/sitemap.xml
+
+# Generated on 2025-11-01T06:30:18.033Z
