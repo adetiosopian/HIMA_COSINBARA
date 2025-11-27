@@ -1,17 +1,18 @@
-// const express = require('express')
-// const cors = require('cors')
 import express from "express";
 import cors from "cors";
 import multer from "multer";
 import path from "path";
+import fs from "fs";
 import { db } from "./config_db/db.js";
 
-const app = express()
-app.use(express.json())
+const app = express();
+app.use(express.json());
+app.use(cors());
 
-// ✅ Izinkan akses dari semua origin (termasuk localhost:5173)
-app.use(cors())
-
+// pastikan folder upload ada
+["gambar", "sertif"].forEach(dir => {
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+});
 
 // login
 const user = { username: 'admin', password: 'admin123' };
@@ -31,110 +32,59 @@ app.get('/dashboard', (req, res) => {
   res.send('Selamat datang di dashboard!');
 });
 
-
-
-// kegiatan add
-// konfig penyimpanan kegiatan
+// konfigurasi multer untuk kegiatan
 const penyimpanan = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "gambar/")
-  },
+  destination: (req, file, cb) => cb(null, "gambar/"),
   filename: (req, file, cb) => {
-    const unique = Date.now()+"-" + Math.round(Math.random()* 1e9)
-    cb(null, unique + path.extname(file.originalname))
+    const unique = Date.now() + "-" + Math.round(Math.random() * 1e9);
+    cb(null, unique + path.extname(file.originalname));
   }
-})
+});
+const upload = multer({ storage: penyimpanan });
+app.use('/gambar', express.static(path.join(process.cwd(), 'gambar')));
 
-const upload = multer({ storage:penyimpanan })
-
-// membuat folder uplod bisa diakses
-
-app.use('/gambar', express.static(path.join(process.cwd(), 'gambar')))
-
+// tambah kegiatan
 app.post("/kirim", upload.single("gambar"), (req, res) => {
-  if (!req.file){
-    return res.status(400).json({ massage:"gambar tidak  ditemukan"})
-  }
+  if (!req.file) return res.status(400).json({ message:"gambar tidak ditemukan" });
 
   const data = {
     judul: req.body.judul,
     kegiatan: req.body.kegiatan,
     status: req.body.status,
     link: req.body.link,
-    Tgl: req.body.Tgl,
-    Keterangan: req.body.Keterangan,
-    gambar: req.file.filename // simpan nama file ke DB
+    tgl: req.body.tgl,
+    keterangan: req.body.Keterangan,
+    gambar: req.file.filename
   };
 
-  const sql = `
-    INSERT INTO kegiatan (judul, kegiatan, status, link, tgl, keterangan, gambar)
-    VALUES (?, ?, ?, ?, ?, ?, ?)
-  `;
+  const sql = `INSERT INTO kegiatan (judul, kegiatan, status, link, tgl, keterangan, gambar) VALUES (?, ?, ?, ?, ?, ?, ?)`;
 
-  db.query(
-    sql,
-    [
-      data.judul,
-      data.kegiatan,
-      data.status,
-      data.link,
-      data.Tgl,
-      data.Keterangan,
-      data.gambar
-    ],
-    (err, result) => {
-      if (err) {
-        console.log(err);
-        return res.status(500).json({ message: "Gagal menyimpan ke DB" });
-      }
+  db.query(sql, [data.judul, data.kegiatan, data.status, data.link, data.tgl, data.keterangan, data.gambar], (err) => {
+    if (err) return res.status(500).json({ message: "Gagal menyimpan ke DB", error: err });
+    res.json({ message: "Berhasil disimpan", data });
+  });
+});
 
-      res.json({
-        message: "Berhasil disimpan",
-        data: data
-      });
-    }
-  );
-
-  console.log("Data diterima:", data);
-})
-
-// kirim data ke kegiatan
+// data kegiatan
 app.get('/kegiatan', (req, res) => {
   db.query('SELECT * FROM kegiatan', (err, rows) => {
-    if (err) {
-      console.error(err);
-      return res.status(500).json({ error: err.message });
-    }
+    if (err) return res.status(500).json({ error: err.message });
     res.json(rows);
   });
 });
 
-// daftar
-// konfig penyimpanan daftar
+// konfigurasi multer untuk daftar
 const penyimpanan1 = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "sertif/");  // semua file akan ke folder sertif/
-  },
-  filename: (req, file, cb) => {
-    const unique = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    cb(null, unique + path.extname(file.originalname));
-  }
+  destination: (req, file, cb) => cb(null, "sertif/"),
+  filename: (req, file, cb) => cb(null, Date.now() + "-" + Math.round(Math.random() * 1e9) + path.extname(file.originalname))
 });
-
 const upload1 = multer({ storage: penyimpanan1 });
-
-// folder bisa diakses dari url
 app.use('/sertif', express.static(path.join(process.cwd(), 'sertif')));
 
-// upload.fields() untuk beberapa file
-app.post("/daftar", upload1.fields([
-  { name: 'gambar', maxCount: 1 },
-  { name: 'gambar1', maxCount: 1 }
-]), (req, res) => {
-
-  if (!req.files || !req.files['gambar'] || !req.files['gambar1']){
+// tambah daftar
+app.post("/daftar", upload1.fields([{ name: 'gambar', maxCount: 1 }, { name: 'gambar1', maxCount: 1 }]), (req, res) => {
+  if (!req.files || !req.files['gambar'] || !req.files['gambar1'])
     return res.status(400).json({ message:"Gambar tidak ditemukan" });
-  }
 
   const data = {
     nama: req.body.fullName,
@@ -143,58 +93,26 @@ app.post("/daftar", upload1.fields([
     ttl: req.body.ttl,
     alamat: req.body.alamat,
     jabatan: req.body.jabatan,
-    alasan: req.body.alamat,
-
+    alasan: req.body.alasan,
     gambar: req.files['gambar'][0].filename,
     gambar1: req.files['gambar1'][0].filename
   };
 
-  const sql = `
-    INSERT INTO mahasiswa 
-      (nama, NIM, tlp, ttl, alamat, jabatan, alasan, gambar, gambar1)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `;
+  const sql = `INSERT INTO mahasiswa (nama, NIM, tlp, ttl, alamat, jabatan, alasan, gambar, gambar1) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
 
-  db.query(
-    sql,
-    [
-      data.nama,
-      data.NIM,
-      data.tlp,
-      data.ttl,
-      data.alamat,
-      data.jabatan,
-      data.alasan,
-      data.gambar,
-      data.gambar1
-    ],
-    (err, result) => {
-      if (err) {
-        console.log(err);
-        return res.status(500).json({ message: "Gagal menyimpan ke DB" });
-      }
-
-      res.json({
-        message: "Berhasil disimpan",
-        data: data
-      });
-    }
-  );
-
-  console.log("Data diterima:", data);
+  db.query(sql, [data.nama, data.NIM, data.tlp, data.ttl, data.alamat, data.jabatan, data.alasan, data.gambar, data.gambar1], (err) => {
+    if (err) return res.status(500).json({ message: "Gagal menyimpan ke DB", error: err });
+    res.json({ message: "Berhasil disimpan", data });
+  });
 });
 
-// kirim anggota baru
+// data anggota
 app.get('/anggota', (req, res) => {
   db.query('SELECT * FROM mahasiswa', (err, rows) => {
-    if (err) {
-      console.error(err);
-      return res.status(500).json({ error: err.message });
-    }
+    if (err) return res.status(500).json({ error: err.message });
     res.json(rows);
   });
 });
 
-app.listen(3000, () => {
-  console.log('Server berjalan di http://localhost:3000')
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log("Server berjalan di port", PORT));
