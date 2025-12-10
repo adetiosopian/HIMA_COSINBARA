@@ -43,7 +43,7 @@ function selesai1(){
   selesai.value="bg-blue-600"
 }
 function belum1(){
-  kegiatanlistc.value = kegiatanList.value.filter(item => item.status === "Akan Datang");
+  kegiatanlistc.value = kegiatanList.value.filter(item => item.status != "Selesai");
   semua.value="bg-white"
   selesai.value="bg-white"
   belum.value="bg-blue-600"

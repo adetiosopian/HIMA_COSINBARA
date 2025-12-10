@@ -37,7 +37,7 @@ import axios from 'axios'
 
     const kirim = async (data) => {
     try {
-        const res = await axios.post("https://localhost:300/kirim", data, {
+        const res = await axios.post("https://api.himacosinbara.com/kirim", data, {
           headers: { "Content-Type": "multipart/form-data" }
       })
         console.log(res.data)
@@ -81,7 +81,7 @@ import axios from 'axios'
                 </div>
                 <!-- Tanggal -->
                 <div class="mt-2">
-                    <label for="studentId" class="block text-sm font-medium text-gray-700 mb-1">Tanggal di laksanakan</label>
+                    <label for="tgl" class="block text-sm font-medium text-gray-700 mb-1">Tanggal di laksanakan</label>
                     <input type="text" name="Tgl" placeholder="Contoh: 17 November 2025" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" required>
                 </div>
                

@@ -52,7 +52,7 @@ app.post("/kirim", upload.single("gambar"), (req, res) => {
     kegiatan: req.body.kegiatan,
     status: req.body.status,
     link: req.body.link,
-    tgl: req.body.tgl,
+    tgl: req.body.Tgl,
     keterangan: req.body.Keterangan,
     gambar: req.file.filename
   };
